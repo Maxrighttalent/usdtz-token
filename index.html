@@ -37,8 +37,14 @@
       margin-bottom: 0.5rem;
       color: #0d6efd;
     }
-    .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 0.5rem; }
-    section { margin: 2.25rem 0; }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    section {
+      margin: 2.25rem 0;
+    }
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1.25rem;
@@ -46,24 +52,35 @@
       padding-bottom: 0.5rem;
       border-bottom: 2px solid #f0f0f0;
     }
-    ul { padding-left: 1.5rem; margin: 1rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background: #f8f9fa;
+      font-weight: bold;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
     a {
       color: #0d6efd;
       text-decoration: none;
     }
-    a:hover { text-decoration: underline; }
-    .token-details ul {
-      list-style: none;
-      padding-left: 0;
+    a:hover {
+      text-decoration: underline;
     }
-    .token-details li {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.6rem 0;
-      border-bottom: 1px dashed #eee;
+    .verified {
+      color: green;
+      font-weight: bold;
     }
-    .token-details li:last-child { border-bottom: none; }
-    .token-details strong { font-weight: 600; }
     footer {
       margin-top: 3rem;
       padding-top: 1.5rem;
@@ -92,55 +109,61 @@
 
     <section>
       <p>
-        USDT.z is a BEP-20 compliant token that provides seamless bridging of USDT liquidity to the Binance Smart Chain ecosystem with 8 decimal precision.
+        USDT.z (Tether USD Bridged ZED20) is a BEP-20 compliant token deployed on Binance Smart Chain that provides seamless bridging of USDT liquidity to the BSC ecosystem with 8 decimal precision.
       </p>
     </section>
 
-    <section class="token-details">
+    <section>
       <h2>Token Details</h2>
-      <ul>
-        <li><strong>Token Name:</strong> <span>Tether USD Bridged ZED20</span></li>
-        <li><strong>Symbol:</strong> <span>USDTz</span></li>
-        <li><strong>Decimals:</strong> <span>8</span></li>
-        <li><strong>Total Supply:</strong> <span>200,000,000 USDTz</span></li>
-        <li><strong>Blockchain:</strong> <span>Binance Smart Chain</span></li>
-        <li><strong>Contract Type:</strong> <span>BEP-20</span></li>
-      </ul>
+      <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td><strong>Name</strong></td><td>Tether USD Bridged ZED20</td></tr>
+        <tr><td><strong>Symbol</strong></td><td>USDTz</td></tr>
+        <tr><td><strong>Decimals</strong></td><td>8</td></tr>
+        <tr><td><strong>Total Supply</strong></td><td>200,000,000 USDTz</td></tr>
+        <tr><td><strong>Blockchain</strong></td><td>Binance Smart Chain (BSC)</td></tr>
+        <tr><td><strong>Contract Type</strong></td><td>BEP-20</td></tr>
+        <tr><td><strong>Verified</strong></td><td><span class="verified">✅ Yes</span></td></tr>
+      </table>
     </section>
 
     <section>
-      <h2>Project Documentation</h2>
-      <ul>
-        <li><a href="README.md" target="_blank">README</a> – Project overview</li>
-        <li><a href="ROADMAP.md" target="_blank">Roadmap</a> – Development milestones</li>
-      </ul>
+      <h2>Official Links</h2>
+      <table>
+        <tr><th>Platform</th><th>Link</th></tr>
+        <tr><td><strong>BscScan</strong></td><td><a href="https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008" target="_blank">0x12c...5008</a></td></tr>
+        <tr><td><strong>Twitter</strong></td><td><a href="https://x.com/usdtzofficial" target="_blank">@usdtzofficial</a></td></tr>
+        <tr><td><strong>Telegram</strong></td><td><a href="https://t.me/usdtz_officially" target="_blank">@usdtz_officially</a></td></tr>
+        <tr><td><strong>Website</strong></td><td><a href="https://usdtzcontroller.online" target="_blank">usdtzcontroller.online</a></td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:contact@usdtzcontroller.online">contact@usdtzcontroller.online</a></td></tr>
+      </table>
     </section>
 
     <section>
-      <h2>Technical Documents</h2>
+      <h2>Technical Details</h2>
       <ul>
-        <li><a href="docs/technical-spec.md" target="_blank">Technical Specification</a></li>
-        <li><a href="docs/tokenomics.md" target="_blank">Tokenomics</a></li>
-        <li><a href="docs/security-audit.md" target="_blank">Security Audit</a></li>
-        <li><a href="docs/whitepaper.pdf" target="_blank">Whitepaper (PDF)</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contract Verification</h2>
-      <ul>
-        <li>✅ <strong>Verification Status:</strong> Verified</li>
         <li><strong>Compiler Version:</strong> v0.6.12+commit.27d51765</li>
         <li><strong>Optimization:</strong> Enabled (200 runs)</li>
         <li><strong>License:</strong> MIT</li>
-        <li><strong>Security:</strong> No hidden minting functions</li>
-        <li><strong>Admin Functions:</strong> Limited after deployment</li>
+        <li><strong>Security:</strong> No hidden minting functions, no admin privileges after deployment</li>
+        <li><strong>Standard:</strong> BEP-20 compliant</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>How to Add to Your Wallet</h2>
+      <ol>
+        <li>Open your wallet (MetaMask, Trust Wallet, etc.)</li>
+        <li>Go to “Add Token” or “Import Token”</li>
+        <li>Paste the contract address: <code>0x12c860695289e06b390e008ed0871172a24f5008</code></li>
+        <li>Confirm and save</li>
+      </ol>
     </section>
 
     <section>
       <h2>Contact Us</h2>
       <p>Reach out to the USDT.z team with your questions and feedback.</p>
+      <p><a href="mailto:contact@usdtzcontroller.online">contact@usdtzcontroller.online</a></p>
     </section>
 
     <footer>
