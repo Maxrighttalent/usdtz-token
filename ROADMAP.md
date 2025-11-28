@@ -1,31 +1,35 @@
 # USDT.z Token Roadmap
 
 ## Phase 1 (Completed - November 2025)
-- [x] Smart contract development and security audit
+- [x] Smart contract development and security review
 - [x] Deployment on Binance Smart Chain
 - [x] Contract verification on BscScan
-- [x] Token listing with proper metadata and logo
+- [x] Initial liquidity provision
 - [x] GitHub repository setup and documentation
+- [x] Official website launch at https://usdtzcontroller.online
+- [x] Social media presence established:
+  - Twitter: [@usdtzofficial](https://x.com/usdtzofficial)
+  - Telegram: [@usdtz_officially](https://t.me/usdtz_officially)
 
 ## Phase 2 (Q1 2026)
 - [ ] Integration with major BSC DEXs (PancakeSwap, ApeSwap)
 - [ ] Cross-chain bridge development between Ethereum and BSC
 - [ ] Reserve attestation by third-party auditor
 - [ ] Community growth initiatives
-- [ ] Official documentation website launch
-- [ ] Mobile wallet integration (Trust Wallet, MetaMask)
+- [ ] Mobile wallet support (Trust Wallet, MetaMask)
+- [ ] API development for institutional partners
 
 ## Phase 3 (Q2-Q3 2026)
 - [ ] Integration with lending protocols (Venus, Alpaca Finance)
-- [ ] API development for institutional partners
 - [ ] Fiat on/off ramp partnerships
 - [ ] Yield farming opportunities with USDT.z
 - [ ] Community governance forum launch
+- [ ] Developer resources and SDK creation
 
 ## Phase 4 (Q4 2026+)
 - [ ] Multi-chain expansion (Polygon, Avalanche, Arbitrum)
 - [ ] Advanced DeFi primitives (options, derivatives)
-- [ ] Decentralized autonomous organization (DAO) governance implementation
+- [ ] Governance model implementation
 - [ ] Full decentralization of bridge operations
 - [ ] Enterprise adoption program
 
