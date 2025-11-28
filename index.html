@@ -6,78 +6,88 @@
   <title>USDT.z Token – Tether USD Bridged ZED20</title>
   <meta name="description" content="USDT.z is a BEP-20 compliant token bridging USDT liquidity to Binance Smart Chain with 8 decimals.">
   <style>
-    /* Minimal, clean CSS — no external dependencies */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background: #fafafa;
-      padding: 2rem;
+      color: #222;
+      background: #f9f9f9;
+      padding: 1.5rem;
     }
     .container {
       max-width: 960px;
       margin: 0 auto;
       background: white;
       padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     }
-    header h1 {
-      font-size: 2.4rem;
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .logo img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-size: 2.2rem;
       margin-bottom: 0.5rem;
       color: #0d6efd;
     }
-    header p.subtitle {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-    section {
-      margin: 2rem 0;
-    }
+    .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 0.5rem; }
+    section { margin: 2.25rem 0; }
     h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      color: #222;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: #111;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #f0f0f0;
     }
-    ul, ol {
-      padding-left: 1.5rem;
-      margin: 1rem 0;
-    }
+    ul { padding-left: 1.5rem; margin: 1rem 0; }
     a {
       color: #0d6efd;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    a:hover { text-decoration: underline; }
+    .token-details ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .token-details {
-      background: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 1.5rem 0;
+    .token-details li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #eee;
     }
-    .contract-info {
-      font-family: monospace;
-      word-break: break-all;
-      background: #eee;
-      padding: 0.75rem;
-      border-radius: 6px;
-    }
+    .token-details li:last-child { border-bottom: none; }
+    .token-details strong { font-weight: 600; }
     footer {
       margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
       text-align: center;
-      color: #888;
+      color: #777;
       font-size: 0.95rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem; }
+      h1 { font-size: 1.8rem; }
+      .logo img { width: 100px; height: 100px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/logo.png" alt="USDT.z Logo">
+      </div>
       <h1>USDT.z Token</h1>
-      <p class="subtitle">Tether USD Bridged ZED20 — Bridging USDT Liquidity to Binance Smart Chain</p>
+      <p class="subtitle">Tether USD Bridged ZED20</p>
+      <p>Bridging USDT Liquidity to Binance Smart Chain</p>
     </header>
 
     <section>
@@ -89,18 +99,25 @@
     <section class="token-details">
       <h2>Token Details</h2>
       <ul>
-        <li><strong>Token Name:</strong> Tether USD Bridged ZED20</li>
-        <li><strong>Symbol:</strong> USDTz</li>
-        <li><strong>Decimals:</strong> 8</li>
-        <li><strong>Total Supply:</strong> 200,000,000 USDTz</li>
-        <li><strong>Blockchain:</strong> Binance Smart Chain</li>
-        <li><strong>Contract Type:</strong> BEP-20</li>
+        <li><strong>Token Name:</strong> <span>Tether USD Bridged ZED20</span></li>
+        <li><strong>Symbol:</strong> <span>USDTz</span></li>
+        <li><strong>Decimals:</strong> <span>8</span></li>
+        <li><strong>Total Supply:</strong> <span>200,000,000 USDTz</span></li>
+        <li><strong>Blockchain:</strong> <span>Binance Smart Chain</span></li>
+        <li><strong>Contract Type:</strong> <span>BEP-20</span></li>
       </ul>
     </section>
 
     <section>
-      <h2>Documentation</h2>
-      <p>Explore the technical and economic foundations of USDT.z:</p>
+      <h2>Project Documentation</h2>
+      <ul>
+        <li><a href="README.md" target="_blank">README</a> – Project overview</li>
+        <li><a href="ROADMAP.md" target="_blank">Roadmap</a> – Development milestones</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Documents</h2>
       <ul>
         <li><a href="docs/technical-spec.md" target="_blank">Technical Specification</a></li>
         <li><a href="docs/tokenomics.md" target="_blank">Tokenomics</a></li>
@@ -112,20 +129,22 @@
     <section>
       <h2>Contract Verification</h2>
       <ul>
-        <li>✅ <strong>Verified</strong> on BscScan</li>
-        <li><strong>Compiler:</strong> v0.6.12+commit.27d51765</li>
+        <li>✅ <strong>Verification Status:</strong> Verified</li>
+        <li><strong>Compiler Version:</strong> v0.6.12+commit.27d51765</li>
         <li><strong>Optimization:</strong> Enabled (200 runs)</li>
         <li><strong>License:</strong> MIT</li>
         <li><strong>Security:</strong> No hidden minting functions</li>
         <li><strong>Admin Functions:</strong> Limited after deployment</li>
       </ul>
-      <!-- Replace with your actual contract address when ready -->
-      <!-- <p><strong>Verified Contract Address:</strong> <span class="contract-info">0x...</span></p> -->
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>Reach out to the USDT.z team with your questions and feedback.</p>
     </section>
 
     <footer>
-      <p>© 2025 USDT.z Token. All rights reserved.</p>
-      <p>For inquiries, please contact the team via official channels.</p>
+      <p>&copy; 2025 USDT.z Token. All rights reserved.</p>
     </footer>
   </div>
 </body>
