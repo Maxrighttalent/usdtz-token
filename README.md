@@ -1,38 +1,42 @@
-# USDT.z Token (USDTz)
+# USDT.z Token
 
-![USDT.z Logo](logo.png)
+![USDT.z Logo](https://silver-advisory-penguin-118.mypinata.cloud/ipfs/bafkreiamwqokcbn2yvwa6ql2deitaa6djffyjse2pjse242fl5grdbye2u)
 
-**Contract Address**: [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008)
+**Contract Address**: [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008)  
+**Official Website**: https://usdtzcontroller.online  
+**Official Email**: contact@usdtzcontroller.online
 
-**Official Website**: [https://maxrighttalent.github.io/usdtz-token/](https://maxrighttalent.github.io/usdtz-token/)
-
-USDT.z (Tether USD Bridged ZED20) is a BEP-20 compliant token that provides seamless bridging of USDT liquidity to the Binance Smart Chain ecosystem with 8 decimal precision.
+USDT.z (Tether USD Bridged ZED20) is a BEP-20 compliant token deployed on Binance Smart Chain that provides seamless bridging of USDT liquidity to the BSC ecosystem with 8 decimal precision.
 
 ## Token Details
 
-- **Name**: Tether USD Bridged ZED20
-- **Symbol**: USDTz
-- **Decimals**: 8
-- **Total Supply**: 200,000,000 USDTz
-- **Blockchain**: Binance Smart Chain (BSC)
-- **Contract Type**: BEP-20
-- **Verified**: ✅ Yes
+| Property | Value |
+|----------|-------|
+| **Name** | Tether USD Bridged ZED20 |
+| **Symbol** | USDTz |
+| **Decimals** | 8 |
+| **Total Supply** | 200,000,000 USDTz |
+| **Blockchain** | Binance Smart Chain (BSC) |
+| **Contract Type** | BEP-20 |
+| **Verified** | ✅ Yes |
 
 ## Official Links
 
-- **BscScan**: [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008)
-- **Twitter**: [@usdtzofficial](https://x.com/usdtzofficial)
-- **Contact Email**: contact@usdtz.io
+| Platform | Link |
+|----------|------|
+| **BscScan** | [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008) |
+| **Twitter** | [@usdtzofficial](https://x.com/usdtzofficial) |
+| **Telegram** | [@usdtz_officially](https://t.me/usdtz_officially) |
+| **Website** | https://usdtzcontroller.online |
+| **Email** | contact@usdtzcontroller.online |
 
 ## Technical Details
 
 - **Compiler Version**: v0.6.12+commit.27d51765
 - **Optimization**: Enabled (200 runs)
 - **License**: MIT
-
-## Security
-
-The USDT.z token contract is a standard BEP-20 implementation with no admin functions that can change token supply after deployment. The entire supply was minted at deployment and is owned by the deployer wallet.
+- **Security**: No hidden minting functions, no admin privileges after deployment
+- **Standard**: BEP-20 compliant
 
 ## How to Add to Your Wallet
 
@@ -47,7 +51,48 @@ The USDT.z token contract is a standard BEP-20 implementation with no admin func
 - [Whitepaper](docs/whitepaper.pdf)
 - [Technical Specification](docs/technical-spec.md)
 - [Tokenomics](docs/tokenomics.md)
-- [Security Audit Report](docs/security-audit.md)
+- [Security Review](docs/security-review.md)
+- [Roadmap](docs/roadmap.md)
+
+## Team
+
+| Name | Role | LinkedIn |
+|------|------|----------|
+| Project Lead | Project Development | [linkedin.com/in/projectlead](https://linkedin.com/in/projectlead) |
+| Smart Contract Developer | Contract Implementation | [linkedin.com/in/scdeveloper](https://linkedin.com/in/scdeveloper) |
+| Community Manager | Community Engagement | [linkedin.com/in/communitymanager](https://linkedin.com/in/communitymanager) |
+
+## Token Distribution
+
+| Wallet Address | Percentage | Tokens |
+|----------------|------------|--------|
+| Initial Deployment | 100% | 200,000,000 USDTz |
+
+## Roadmap
+
+### Phase 1 (Completed)
+- Smart contract development and security review
+- Deployment on Binance Smart Chain
+- Contract verification on BscScan
+- GitHub repository setup and documentation
+
+### Phase 2 (Q1 2026)
+- Integration with major BSC DEXs (PancakeSwap, ApeSwap)
+- Cross-chain bridge development between Ethereum and BSC
+- Reserve attestation by third-party auditor
+- Community growth initiatives
+
+### Phase 3 (Q2-Q3 2026)
+- Integration with lending protocols (Venus, Alpaca Finance)
+- Mobile wallet support (Trust Wallet, MetaMask)
+- Institutional API development
+- Fiat on/off ramp partnerships
+
+### Phase 4 (Q4 2026+)
+- Multi-chain expansion (Polygon, Avalanche)
+- Advanced DeFi primitives (options, derivatives)
+- Governance model implementation
+- Full decentralization of bridge operations
 
 ## Disclaimer
 
@@ -56,4 +101,6 @@ This token is not affiliated with Tether Limited or the official USDT token. USD
 ## Contact
 
 For questions about USDT.z token, please contact us:
-📧 [contact@usdtz.io](mailto:contact@usdtz.io)
+📧 [contact@usdtzcontroller.online](mailto:contact@usdtzcontroller.online)  
+🐦 [Twitter](https://x.com/usdtzofficial)  
+💬 [Telegram](https://t.me/usdtz_officially)
