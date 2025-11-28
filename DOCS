@@ -1,5 +1,8 @@
-docs/
-├── docs/technical-spec.md
-├── docs/tokenomics.md
-├── docs/security-audit.md
-└── docs/whitepaper.pdf
+├── README.md
+├── ROADMAP.md
+├── index.html
+└── docs/
+    ├── technical-spec.md
+    ├── tokenomics.md
+    ├── security-audit.md
+    └── whitepaper.pdf
