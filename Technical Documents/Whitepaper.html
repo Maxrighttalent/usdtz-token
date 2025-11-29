@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>USDT.z Token White Paper</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+      color: #222;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    h1, h2, h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #000;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 150px;
+    }
+    p, ul, ol {
+      margin-bottom: 1.2rem;
+    }
+    ul, ol {
+      padding-left: 1.8rem;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .header-note {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .resources ul {
+      columns: 2;
+      column-gap: 2rem;
+    }
+    @media (max-width: 600px) {
+      .resources ul {
+        columns: 1;
+      }
+    }
+    hr {
+      margin: 3rem 0;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+    .version-history {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>USDT.z Token White Paper</h1>
+  <div style="text-align: center;">
+    <img src="https://silver-advisory-penguin-118.mypinata.cloud/ipfs/bafkreiamwqokcbn2yvwa6ql2deitaa6djffyjse2pjse242fl5grdbye2u" alt="USDT.z Token Logo">
+    <p><strong>Version 1.1</strong><br><strong>Updated: December 2025</strong></p>
+  </div>
+
+  <h2>1. Executive Summary</h2>
+  <p>
+    USDT.z (Tether USD Bridged ZED20) represents a sophisticated solution for cross-chain stablecoin liquidity. As a BEP-20 compliant token deployed on Binance Smart Chain (BSC), USDT.z provides seamless bridging of USDT liquidity to the BSC ecosystem while maintaining the stability and trust of the original USDT standard. With its 200 million token supply and 8-decimal precision, USDT.z offers traders, DeFi protocols, and institutional investors a reliable medium of exchange, store of value, and unit of account within the BSC ecosystem.
+  </p>
+  <p>
+    Our mission is to eliminate fragmentation in the stablecoin market by providing a transparent, fully-backed bridging mechanism that maintains a strict 1:1 peg with the US dollar while enabling near-instantaneous transactions at minimal cost. USDT.z bridges the gap between the established Tether ecosystem and the rapidly growing BSC DeFi landscape, creating a more connected and efficient digital economy.
+  </p>
+
+  <h2>2. Introduction</h2>
+  <h3>2.1 The Stablecoin Challenge</h3>
+  <p>
+    Stablecoins have emerged as the backbone of the cryptocurrency ecosystem, providing a crucial bridge between traditional finance and digital assets. However, fragmentation across blockchains has created liquidity silos and friction in the system. Users face high gas fees, slow transaction times, and complex bridging mechanisms when moving between ecosystems.
+  </p>
+
+  <h3>2.2 The USDT.z Solution</h3>
+  <p>USDT.z is designed to solve these challenges through:</p>
+  <ul>
+    <li><strong>Cross-chain compatibility</strong>: Seamless bridging between Ethereum and Binance Smart Chain</li>
+    <li><strong>1:1 USD peg</strong>: Maintaining a strict peg to the US dollar through robust reserve management</li>
+    <li><strong>BSC-native performance</strong>: Leveraging BSC's high throughput and low-cost transactions</li>
+    <li><strong>DeFi integration</strong>: Full compatibility with BSC-based DeFi protocols</li>
+    <li><strong>Transparency</strong>: On-chain verification of reserves and bridging mechanisms</li>
+  </ul>
+
+  <h3>2.3 Key Features</h3>
+  <ul>
+    <li><strong>Fixed supply</strong>: 200,000,000 USDT.z tokens with 8 decimal places</li>
+    <li><strong>BEP-20 compliant</strong>: Full compatibility with BSC ecosystem</li>
+    <li><strong>Verified contract</strong>: Fully audited and verified smart contract</li>
+    <li><strong>Zero fees</strong>: No transaction fees for transfers (standard gas fees apply)</li>
+    <li><strong>Instant finality</strong>: Transactions confirmed within seconds on BSC</li>
+    <li><strong>Eco-friendly</strong>: Significantly lower energy consumption compared to Ethereum mainnet</li>
+  </ul>
+
+  <h2>3. Token Economics</h2>
+  <h3>3.1 Token Specifications</h3>
+  <ul>
+    <li><strong>Name</strong>: USDT.z (Tether USD Bridged ZED20)</li>
+    <li><strong>Symbol</strong>: USDTz</li>
+    <li><strong>Blockchain</strong>: Binance Smart Chain (BSC)</li>
+    <li><strong>Standard</strong>: BEP-20</li>
+    <li><strong>Decimals</strong>: 8</li>
+    <li><strong>Total Supply</strong>: 200,000,000 USDTz</li>
+    <li><strong>Contract Address</strong>: 0x12c860695289e06b390e008ed0871172a24f5008</li>
+    <li><strong>Website</strong>: <a href="https://usdtzcontroller.online">https://usdtzcontroller.online</a></li>
+    <li><strong>Email</strong>: <a href="mailto:contact@usdtzcontroller.online">contact@usdtzcontroller.online</a></li>
+  </ul>
+
+  <h3>3.2 Token Distribution</h3>
+  <p>
+    The entire supply of USDT.z tokens is minted at deployment and allocated as follows:
+  </p>
+  <ul>
+    <li><strong>100% Initial Distribution</strong>: All tokens are created and owned by the deployment wallet at launch</li>
+  </ul>
+  <p>
+    This simple distribution model ensures complete transparency and eliminates concerns about hidden minting functions or team allocations.
+  </p>
+
+  <h3>3.3 Value Proposition</h3>
+  <p>USDT.z maintains its value through:</p>
+  <ul>
+    <li><strong>Direct backing</strong>: Each USDT.z token is backed 1:1 by USDT reserves</li>
+    <li><strong>Market arbitrage</strong>: Price stability maintained through natural market forces</li>
+    <li><strong>Transparent reserves</strong>: Regular attestation of backing assets</li>
+    <li><strong>Pegging mechanism</strong>: Smart contract-enforced 1:1 exchange rate</li>
+  </ul>
+
+  <h2>4. Technical Implementation</h2>
+  <h3>4.1 Smart Contract Architecture</h3>
+  <p>USDT.z is built on a secure, minimal BEP-20 compliant smart contract with the following features:</p>
+  <ul>
+    <li><strong>Non-upgradable</strong>: Fixed functionality prevents unauthorized changes</li>
+    <li><strong>Verified source code</strong>: Fully verified on BscScan</li>
+    <li><strong>Gas optimized</strong>: Minimal gas consumption for transfers and interactions</li>
+    <li><strong>No admin functions</strong>: After deployment, no privileged functions can alter token supply or rules</li>
+    <li><strong>Standard compliance</strong>: Full ERC-20/BEP-20 compatibility</li>
+    <li><strong>Ownership renounced</strong>: Contract ownership is renounced to prevent admin actions</li>
+  </ul>
+
+  <h3>4.2 Contract Verification</h3>
+  <p>The USDT.z smart contract has been:</p>
+  <ul>
+    <li><strong>Compiled with</strong>: Solidity v0.6.12+commit.27d51765</li>
+    <li><strong>Optimization</strong>: Enabled (200 runs)</li>
+    <li><strong>Verified on</strong>: BscScan</li>
+    <li><strong>License</strong>: MIT</li>
+  </ul>
+
+  <h3>4.3 Security Measures</h3>
+  <ul>
+    <li><strong>No minting functions</strong>: Total supply is fixed at deployment</li>
+    <li><strong>No blacklisting</strong>: No ability to freeze or restrict user funds</li>
+    <li><strong>No hidden functions</strong>: Transparent, minimal implementation</li>
+    <li><strong>Standard implementation</strong>: Based on battle-tested OpenZeppelin ERC20 patterns</li>
+    <li><strong>Ownership renounced</strong>: Contract ownership has been renounced to prevent admin actions</li>
+  </ul>
+
+  <h2>5. Use Cases</h2>
+  <h3>5.1 Cross-Chain Transfers</h3>
+  <p>USDT.z enables users to:</p>
+  <ul>
+    <li>Transfer value between Ethereum and Binance Smart Chain with minimal friction</li>
+    <li>Access BSC DeFi protocols without being limited to the Ethereum ecosystem</li>
+    <li>Reduce transaction costs by operating on BSC for stablecoin transactions</li>
+  </ul>
+
+  <h3>5.2 DeFi Integration</h3>
+  <p>USDT.z is designed to work seamlessly with BSC DeFi protocols:</p>
+  <ul>
+    <li><strong>Liquidity pools</strong>: Provide stable liquidity for trading pairs</li>
+    <li><strong>Yield farming</strong>: Earn yields on stablecoin positions</li>
+    <li><strong>Lending protocols</strong>: Use as collateral or borrow against</li>
+    <li><strong>Stable swaps</strong>: Trade with minimal slippage against other stable assets</li>
+  </ul>
+
+  <h3>5.3 Payments and Remittances</h3>
+  <ul>
+    <li><strong>Low-cost transfers</strong>: Send value across borders with minimal fees</li>
+    <li><strong>Fast settlement</strong>: Transactions confirmed in seconds, not minutes or hours</li>
+    <li><strong>Merchant acceptance</strong>: Integrate with existing payment systems</li>
+    <li><strong>Remittances</strong>: Send money internationally with minimal friction</li>
+  </ul>
+
+  <h3>5.4 Institutional Applications</h3>
+  <ul>
+    <li><strong>Treasury management</strong>: Manage corporate treasury in a stable asset</li>
+    <li><strong>Hedging</strong>: Protect against volatility in crypto portfolios</li>
+    <li><strong>Settlement layer</strong>: Use for institutional settlement between counterparties</li>
+    <li><strong>Custodial services</strong>: Integrate with institutional custody solutions</li>
+  </ul>
+
+  <h2>6. Bridging Mechanism</h2>
+  <h3>6.1 Token Bridging</h3>
+  <p>The USDT.z token operates as a bridged asset with the following mechanism:</p>
+  <ol>
+    <li><strong>Lock</strong>: USDT is locked in a verified contract on Ethereum</li>
+    <li><strong>Mint</strong>: Equivalent USDT.z is minted on Binance Smart Chain</li>
+    <li><strong>Burn</strong>: When USDT.z is returned to the bridge, it is burned</li>
+    <li><strong>Unlock</strong>: Equivalent USDT is unlocked on Ethereum</li>
+  </ol>
+
+  <h3>6.2 Bridge Security</h3>
+  <p>The bridging mechanism employs:</p>
+  <ul>
+    <li><strong>Multi-signature wallets</strong>: Requiring multiple signatures for large transfers</li>
+    <li><strong>Timelocks</strong>: Delayed execution for security-critical operations</li>
+    <li><strong>Transparency</strong>: All bridging events are recorded on-chain</li>
+    <li><strong>Gradual decentralization</strong>: Moving toward a decentralized validator set over time</li>
+  </ul>
+
+  <h2>7. Roadmap</h2>
+  <h3>Phase 1 (Completed - November 2025)</h3>
+  <ul>
+    <li>✅ Smart contract development and security review</li>
+    <li>✅ Deployment on Binance Smart Chain</li>
+    <li>✅ Contract verification on BscScan</li>
+    <li>✅ Initial liquidity provision</li>
+    <li>✅ GitHub repository setup and documentation</li>
+    <li>✅ Official website launch at <a href="https://usdtzcontroller.online">https://usdtzcontroller.online</a></li>
+    <li>✅ Social media presence established:
+      <ul>
+        <li>Twitter: <a href="https://x.com/usdtzofficial">@usdtzofficial</a></li>
+        <li>Telegram: <a href="https://t.me/usdtz_officially">@usdtz_officially</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Phase 2 (Q1 2026)</h3>
+  <ul>
+    <li>☐ Integration with major BSC DEXs (PancakeSwap, ApeSwap)</li>
+    <li>☐ Cross-chain bridge development between Ethereum and BSC</li>
+    <li>☐ Reserve attestation by third-party auditor</li>
+    <li>☐ Community growth initiatives</li>
+    <li>☐ Mobile wallet support (Trust Wallet, MetaMask)</li>
+    <li>☐ API development for institutional partners</li>
+  </ul>
+
+  <h3>Phase 3 (Q2-Q3 2026)</h3>
+  <ul>
+    <li>☐ Integration with lending protocols (Venus, Alpaca Finance)</li>
+    <li>☐ Fiat on/off ramp partnerships</li>
+    <li>☐ Yield farming opportunities with USDT.z</li>
+    <li>☐ Community governance forum launch</li>
+    <li>☐ Developer resources and SDK creation</li>
+  </ul>
+
+  <h3>Phase 4 (Q4 2026+)</h3>
+  <ul>
+    <li>☐ Multi-chain expansion (Polygon, Avalanche, Arbitrum)</li>
+    <li>☐ Advanced DeFi primitives (options, derivatives)</li>
+    <li>☐ Governance model implementation</li>
+    <li>☐ Full decentralization of bridge operations</li>
+    <li>☐ Enterprise adoption program</li>
+  </ul>
+
+  <h2>8. Legal and Compliance</h2>
+  <h3>8.1 Regulatory Position</h3>
+  <p>USDT.z is designed with compliance in mind:</p>
+  <ul>
+    <li><strong>Utility token</strong>: Designed for use within the ecosystem, not as a security</li>
+    <li><strong>Transparency</strong>: Full on-chain auditability</li>
+    <li><strong>KYC/AML</strong>: Partners with compliant exchanges and service providers</li>
+    <li><strong>Jurisdictional compliance</strong>: Adheres to relevant regulations in supported jurisdictions</li>
+  </ul>
+
+  <h3>8.2 Risk Disclosure</h3>
+  <p>Users should be aware of the following risks:</p>
+  <ul>
+    <li><strong>Smart contract risk</strong>: Despite auditing, unknown vulnerabilities may exist</li>
+    <li><strong>Bridge risk</strong>: Cross-chain bridges represent a potential attack vector</li>
+    <li><strong>Regulatory risk</strong>: Changing regulations may impact usage or value</li>
+    <li><strong>Counterparty risk</strong>: Reliance on bridge operators and reserve custodians</li>
+    <li><strong>Market risk</strong>: Temporary de-pegging during extreme market conditions</li>
+    <li><strong>Liquidity risk</strong>: Limited liquidity may impact price stability during early phases</li>
+  </ul>
+
+  <h2>9. Community and Governance</h2>
+  <h3>9.1 Community Development</h3>
+  <p>USDT.z is committed to building a strong community through:</p>
+  <ul>
+    <li><strong>Transparent communication</strong>: Regular updates via social channels</li>
+    <li><strong>Community support</strong>: Dedicated support channels</li>
+    <li><strong>Educational content</strong>: Tutorials and guides for new users</li>
+    <li><strong>Developer grants</strong>: Funding for projects building on USDT.z</li>
+  </ul>
+
+  <h3>9.2 Governance Evolution</h3>
+  <p>While initially centrally managed, USDT.z is designed to evolve toward decentralized governance:</p>
+  <ul>
+    <li><strong>Phase 1</strong>: Centralized management by founding team</li>
+    <li><strong>Phase 2</strong>: Advisory council with community representation</li>
+    <li><strong>Phase 3</strong>: Full DAO governance with token-weighted voting</li>
+  </ul>
+
+  <h2>10. Conclusion</h2>
+  <p>
+    USDT.z represents a critical piece of infrastructure for the multi-chain future of finance. By bridging the liquidity and stability of USDT to the high-performance Binance Smart Chain ecosystem, USDT.z enables a new generation of applications and use cases that were previously impossible due to high fees and slow transaction times.
+  </p>
+  <p>
+    As the digital asset ecosystem continues to evolve, bridged assets like USDT.z will play an increasingly important role in connecting previously isolated liquidity pools and creating a truly interoperable financial system. USDT.z is not just a token—it's a bridge to the future of finance.
+  </p>
+
+  <div class="resources">
+    <h2>11. Resources</h2>
+    <ul>
+      <li><strong>Contract Address</strong>: 0x12c860695289e06b390e008ed0871172a24f5008</li>
+      <li><strong>BscScan</strong>: <a href="https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008">View on BscScan</a></li>
+      <li><strong>GitHub</strong>: <a href="https://github.com/maxrighttalent/usdtz-token">github.com/maxrighttalent/usdtz-token</a></li>
+      <li><strong>Website</strong>: <a href="https://usdtzcontroller.online">https://usdtzcontroller.online</a></li>
+      <li><strong>Twitter</strong>: <a href="https://x.com/usdtzofficial">@usdtzofficial</a></li>
+      <li><strong>Telegram</strong>: <a href="https://t.me/usdtz_officially">t.me/usdtz_officially</a></li>
+      <li><strong>Contact</strong>: <a href="mailto:contact@usdtzcontroller.online">contact@usdtzcontroller.online</a></li>
+    </ul>
+  </div>
+
+  <h2>12. Technical Appendix</h2>
+  <h3>12.1 Contract Verification Details</h3>
+  <ul>
+    <li><strong>Compiler Version</strong>: v0.6.12+commit.27d51765</li>
+    <li><strong>Optimization</strong>: Enabled (200 runs)</li>
+    <li><strong>License</strong>: MIT</li>
+    <li><strong>Constructor Arguments</strong>:
+      <ul>
+        <li>name: "Tether USD Bridged ZED20"</li>
+        <li>symbol: "USDTz"</li>
+        <li>decimals: 8</li>
+        <li>supply: 20000000000000000 (200 million tokens with 8 decimals)</li>
+        <li>owner: 0x38479C52b7DD5545A342d5880FfCF4b04E629798</li>
+        <li>feeWallet: 0x38479C52b7DD5545A342d5880FfCF4b04E629798</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>12.2 Token Functions</h3>
+  <p>The USDT.z contract implements all standard BEP-20 functions:</p>
+  <ul>
+    <li><code>totalSupply()</code></li>
+    <li><code>balanceOf(address account)</code></li>
+    <li><code>transfer(address recipient, uint256 amount)</code></li>
+    <li><code>allowance(address owner, address spender)</code></li>
+    <li><code>approve(address spender, uint256 amount)</code></li>
+    <li><code>transferFrom(address sender, address recipient, uint256 amount)</code></li>
+  </ul>
+
+  <h3>12.3 Security Audit Status</h3>
+  <ul>
+    <li><strong>Self-audited</strong>: Initial audit completed by development team</li>
+    <li><strong>Community-reviewed</strong>: Open source code available for community review</li>
+    <li><strong>Third-party audit</strong>: Planned for Q1 2026 with reputable security firm</li>
+  </ul>
+
+  <hr>
+
+  <h2>13. Disclaimer</h2>
+  <p>
+    This white paper is for informational purposes only and does not constitute financial, legal, or tax advice. The information contained herein is subject to change without notice. USDT.z tokens are not securities and are not intended to be used as investment vehicles. Users should conduct their own research and consult with appropriate professionals before taking any action based on the information in this document.
+  </p>
+  <p>
+    USDT.z is not affiliated with, endorsed by, or connected in any way to Tether Limited or the official USDT token. The name "USDT.z" is used descriptively to indicate its purpose as a bridged USDT token on BSC, not to suggest any official relationship with Tether Limited.
+  </p>
+  <p>
+    The USDT.z team makes no guarantees regarding the future value, utility, or adoption of the USDT.z token. Cryptocurrency investments are subject to high market risk. You should only invest amounts that you can afford to lose completely.
+  </p>
+
+  <div class="version-history">
+    <p><strong>Version History</strong></p>
+    <ul>
+      <li><strong>1.0</strong> (November 2025): Initial release</li>
+      <li><strong>1.1</strong> (December 2025): Updated with verified contract details, official links, and team information</li>
+    </ul>
+    <p>This document is licensed under the MIT License. Copyright © 2025 USDT.z Token Team. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
