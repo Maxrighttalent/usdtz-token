@@ -1,108 +1,287 @@
+```html
 <!DOCTYPE html>
-# USDT.z Token (USDTz)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USDT.z Token Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        h1, h2, h3, h4 {
+            color: #1f2d3d;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.3em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .token-info {
+            background: #f1f8ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .token-info h3 {
+            margin-top: 0;
+        }
+        .verified {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #1a6d1a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        .contract-address {
+            font-family: monospace;
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .link-item {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 500;
+        }
+        .link-item a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            background: #e6f7e6;
+            border: 1px solid #c6e2c6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .disclaimer {
+            background: #fff8e6;
+            border: 1px solid #ffecb3;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .roadmap {
+            counter-reset: phase;
+        }
+        .roadmap h3:before {
+            counter-increment: phase;
+            content: "Phase " counter(phase) " - ";
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+        .contact-method i {
+            font-size: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        .highlight {
+            background: #e6f7e6;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>USDT.z Token (USDTz)</h1>
+        
+        <div class="token-info">
+            <h3>USDT.z Token Information</h3>
+            <p><strong>Name:</strong> Tether USD Bridged ZED20</p>
+            <p><strong>Symbol:</strong> USDTz</p>
+            <p><strong>Decimals:</strong> 8</p>
+            <p><strong>Total Supply:</strong> 200,000,000 USDTz</p>
+            <p><strong>Blockchain:</strong> Binance Smart Chain (BSC)</p>
+            <p><strong>Contract Type:</strong> BEP-20</p>
+            <p><strong>Verified:</strong> <span class="verified">Yes</span></p>
+            <p><strong>Contract Address:</strong> <span class="contract-address">0x12c860695289e06b390e008ed0871172a24f5008</span></p>
+        </div>
 
-![USDT.z Logo](https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/LogoSVG%2032x32.svg)
+        <div class="section">
+            <h2>About USDT.z</h2>
+            <p>USDT.z (Tether USD Bridged ZED20) is a BEP-20 compliant token deployed on Binance Smart Chain that provides seamless bridging of USDT liquidity to the BSC ecosystem with 8 decimal precision.</p>
+        </div>
 
-**Contract Address**: [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008)  
-**Official Website**: https://usdtzcontroller.online  
-**Official Email**: contact@usdtzcontroller.online
+        <div class="section">
+            <h2>Official Links</h2>
+            <div class="links-grid">
+                <div class="link-item">
+                    <a href="https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008" target="_blank">BscScan Contract</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://usdtzcontroller.online" target="_blank">Official Website</a>
+                </div>
+                <div class="link-item">
+                    <a href="docs/whitepaper.pdf" target="_blank">Whitepaper</a>
+                </div>
+                <div class="link-item">
+                    <a href="docs/technical-spec.md" target="_blank">Technical Specification</a>
+                </div>
+                <div class="link-item">
+                    <a href="docs/tokenomics.md" target="_blank">Tokenomics</a>
+                </div>
+                <div class="link-item">
+                    <a href="docs/security-audit.md" target="_blank">Security Review</a>
+                </div>
+                <div class="link-item">
+                    <a href="ROADMAP.md" target="_blank">Roadmap</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://t.me/usdtz_officially" target="_blank">Telegram</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://x.com/usdtzofficial" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
 
-USDT.z (Tether USD Bridged ZED20) is a BEP-20 compliant token deployed on Binance Smart Chain that provides seamless bridging of USDT liquidity to the BSC ecosystem with 8 decimal precision.
+        <div class="section">
+            <h2>How to Add to Your Wallet</h2>
+            <ol>
+                <li>Open your wallet (MetaMask, Trust Wallet, etc.)</li>
+                <li>Click "Add Token" or "Import Token"</li>
+                <li>Select "Custom Token"</li>
+                <li>Enter the contract address: <span class="contract-address">0x12c860695289e06b390e008ed0871172a24f5008</span></li>
+                <li>Confirm the token details and add to wallet</li>
+            </ol>
+        </div>
 
-## Token Details
+        <div class="section">
+            <h2>Team</h2>
+            <div class="links-grid">
+                <div class="link-item">
+                    <h3>Project Lead</h3>
+                    <a href="https://linkedin.com/in/projectlead" target="_blank">LinkedIn</a>
+                </div>
+                <div class="link-item">
+                    <h3>Smart Contract Developer</h3>
+                    <a href="https://linkedin.com/in/scdeveloper" target="_blank">LinkedIn</a>
+                </div>
+                <div class="link-item">
+                    <h3>Community Manager</h3>
+                    <a href="https://linkedin.com/in/communitymanager" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
 
-| Property | Value |
-|----------|-------|
-| **Name** | Tether USD Bridged ZED20 |
-| **Symbol** | USDTz |
-| **Decimals** | 8 |
-| **Total Supply** | 200,000,000 USDTz |
-| **Blockchain** | Binance Smart Chain (BSC) |
-| **Contract Type** | BEP-20 |
-| **Verified** | ✅ Yes |
+        <div class="section">
+            <h2>Roadmap</h2>
+            <div class="roadmap">
+                <h3>Phase 1 (Completed)</h3>
+                <p>Smart contract development and security review - Deployment on Binance Smart Chain - Contract verification on BscScan - GitHub repository setup and documentation</p>
+                
+                <h3>Phase 2 (Q1 2026)</h3>
+                <p>Integration with major BSC DEXs (PancakeSwap, ApeSwap) - Cross-chain bridge development between Ethereum and BSC - Reserve attestation by third-party auditor - Community growth initiatives</p>
+                
+                <h3>Phase 3 (Q2-Q3 2026)</h3>
+                <p>Integration with lending protocols (Venus, Alpaca Finance) - Mobile wallet support (Trust Wallet, MetaMask) - Institutional API development - Fiat on/off ramp partnerships</p>
+                
+                <h3>Phase 4 (Q4 2026+)</h3>
+                <p>Multi-chain expansion (Polygon, Avalanche) - Advanced DeFi primitives (options, derivatives) - Governance model implementation - Full decentralization of bridge operations</p>
+            </div>
+        </div>
 
-## Official Links
+        <div class="disclaimer">
+            <h3>Disclaimer</h3>
+            <p>This token is not affiliated with Tether Limited or the official USDT token. USDT.z is an independent project created for bridging USDT liquidity to the BSC ecosystem. This is not financial advice. Use at your own risk.</p>
+        </div>
 
-| Platform | Link |
-|----------|------|
-| **BscScan** | [0x12c860695289e06b390e008ed0871172a24f5008](https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008) |
-| **Twitter** | [@usdtzofficial](https://x.com/usdtzofficial) |
-| **Telegram** | [@usdtz_officially](https://t.me/usdtz_officially) |
-| **Website** | https://usdtzcontroller.online |
-| **Email** | contact@usdtzcontroller.online |
-
-## Technical Details
-
-- **Compiler Version**: v0.6.12+commit.27d51765
-- **Optimization**: Enabled (200 runs)
-- **License**: MIT
-- **Security**: No hidden minting functions, no admin privileges after deployment
-- **Standard**: BEP-20 compliant
-
-## How to Add to Your Wallet
-
-1. Open your wallet (MetaMask, Trust Wallet, etc.)
-2. Click "Add Token" or "Import Token"
-3. Select "Custom Token"
-4. Enter the contract address: `0x12c860695289e06b390e008ed0871172a24f5008`
-5. Confirm the token details and add to wallet
-
-## Documentation
-
-- [Whitepaper](docs/whitepaper.pdf)
-- [Technical Specification](docs/technical-spec.md)
-- [Tokenomics](docs/tokenomics.md)
-- [Security Review](docs/security-audit.md)
-- [Roadmap](ROADMAP.md)
-
-## Team
-
-| Name | Role | LinkedIn |
-|------|------|----------|
-| Project Lead | Project Development | [linkedin.com/in/projectlead](https://linkedin.com/in/projectlead) |
-| Smart Contract Developer | Contract Implementation | [linkedin.com/in/scdeveloper](https://linkedin.com/in/scdeveloper) |
-| Community Manager | Community Engagement | [linkedin.com/in/communitymanager](https://linkedin.com/in/communitymanager) |
-
-## Token Distribution
-
-| Wallet Address | Percentage | Tokens |
-|----------------|------------|--------|
-| Initial Deployment | 100% | 200,000,000 USDTz |
-
-## Roadmap
-
-### Phase 1 (Completed)
-- Smart contract development and security review
-- Deployment on Binance Smart Chain
-- Contract verification on BscScan
-- GitHub repository setup and documentation
-
-### Phase 2 (Q1 2026)
-- Integration with major BSC DEXs (PancakeSwap, ApeSwap)
-- Cross-chain bridge development between Ethereum and BSC
-- Reserve attestation by third-party auditor
-- Community growth initiatives
-
-### Phase 3 (Q2-Q3 2026)
-- Integration with lending protocols (Venus, Alpaca Finance)
-- Mobile wallet support (Trust Wallet, MetaMask)
-- Institutional API development
-- Fiat on/off ramp partnerships
-
-### Phase 4 (Q4 2026+)
-- Multi-chain expansion (Polygon, Avalanche)
-- Advanced DeFi primitives (options, derivatives)
-- Governance model implementation
-- Full decentralization of bridge operations
-
-## Disclaimer
-
-This token is not affiliated with Tether Limited or the official USDT token. USDT.z is an independent project created for bridging USDT liquidity to the BSC ecosystem. This is not financial advice. Use at your own risk.
-
-## Contact
-
-For questions about USDT.z token, please contact us:
-📧 [contact@usdtzcontroller.online](mailto:contact@usdtzcontroller.online)  
-🐦 [Twitter](https://x.com/usdtzofficial)  
-💬 [Telegram](https://t.me/usdtz_officially)
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-method">
+                <span>📧</span>
+                <a href="mailto:contact@usdtzcontroller.online">contact@usdtzcontroller.online</a>
+            </div>
+            <div class="contact-method">
+                <span>🐦</span>
+                <a href="https://x.com/usdtzofficial">Twitter</a>
+            </div>
+            <div class="contact-method">
+                <span>📱</span>
+                <a href="https://t.me/usdtz_officially">Telegram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 ```
