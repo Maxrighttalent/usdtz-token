@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -360,7 +361,7 @@
         }
         
         footer {
-            background: #1f2d3d;
+            background: #2c3e50;
             color: white;
             padding: 2rem 0;
             margin-top: 3rem;
@@ -377,16 +378,12 @@
             margin-bottom: 1.2rem;
             position: relative;
             padding-bottom: 8px;
+            color: #2c7be5;
         }
         
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background: #2c7be5;
+        .footer-section p {
+            color: #ccc;
+            margin-bottom: 10px;
         }
         
         .footer-links {
@@ -415,17 +412,12 @@
             padding-top: 2rem;
             color: #aaa;
             font-size: 0.9rem;
-            border-top: 1px solid #333;
+            border-top: 1px solid #444;
             margin-top: 2rem;
         }
         
         .section {
             padding: 3rem 0;
-        }
-        
-        .documentation-section {
-            padding: 3rem 0;
-            background: white;
         }
         
         .documentation-grid {
@@ -611,7 +603,7 @@
         </div>
     </section>
 
-    <section id="documentation" class="documentation-section">
+    <section id="documentation" class="token-section">
         <div class="container">
             <div class="section-header">
                 <h2>Project Documentation</h2>
@@ -621,27 +613,27 @@
             <div class="documentation-grid">
                 <div class="doc-card">
                     <h3>Whitepaper</h3>
-                    <a href="https://maxrighttalent.github.io/usdtz-token/docs/whitepaper.pdf" target="_blank">Read the whitepaper</a>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Whitepaper.html" target="_blank">Read the whitepaper</a>
                 </div>
                 <div class="doc-card">
                     <h3>Technical Specification</h3>
-                    <a href="https://maxrighttalent.github.io/usdtz-token/docs/technical-spec.md" target="_blank">View technical details</a>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Technical%20Specification.html" target="_blank">View technical details</a>
                 </div>
                 <div class="doc-card">
                     <h3>Tokenomics</h3>
-                    <a href="https://maxrighttalent.github.io/usdtz-token/docs/tokenomics.md" target="_blank">View token economics</a>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Tokenomics.html" target="_blank">View token economics</a>
                 </div>
                 <div class="doc-card">
                     <h3>Security Review</h3>
-                    <a href="https://maxrighttalent.github.io/usdtz-token/docs/security-audit.md" target="_blank">View security audit</a>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Security-review.html" target="_blank">View security audit</a>
                 </div>
                 <div class="doc-card">
                     <h3>Roadmap</h3>
-                    <a href="https://maxrighttalent.github.io/usdtz-token/ROADMAP.md" target="_blank">View development roadmap</a>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/RoadMap.html" target="_blank">View development roadmap</a>
                 </div>
                 <div class="doc-card">
-                    <h3>GitHub Repository</h3>
-                    <a href="https://github.com/maxrighttalent/usdtz-token" target="_blank">View on GitHub</a>
+                    <h3>Read Me</h3>
+                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/ReadMe.html" target="_blank">View project information</a>
                 </div>
             </div>
         </div>
@@ -706,8 +698,8 @@
                     <ul class="footer-links">
                         <li><a href="https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008" target="_blank">BscScan Contract</a></li>
                         <li><a href="https://github.com/maxrighttalent/usdtz-token" target="_blank">GitHub Repository</a></li>
-                        <li><a href="https://maxrighttalent.github.io/usdtz-token/docs/whitepaper.pdf" target="_blank">Whitepaper</a></li>
-                        <li><a href="https://maxrighttalent.github.io/usdtz-token/ROADMAP.md" target="_blank">Roadmap</a></li>
+                        <li><a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Whitepaper.html" target="_blank">Whitepaper</a></li>
+                        <li><a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/RoadMap.html" target="_blank">Roadmap</a></li>
                     </ul>
                 </div>
             </div>
@@ -757,13 +749,17 @@
             });
         });
 
-        // Fix documentation links to ensure they work properly
+        // Open documentation links in new tab
         document.addEventListener('DOMContentLoaded', function() {
-            // Make sure all documentation links open in the same tab
             document.querySelectorAll('.doc-card a').forEach(link => {
-                link.target = '_self';
+                link.target = '_blank';
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open(this.href, '_blank');
+                });
             });
         });
     </script>
 </body>
 </html>
+```
