@@ -1,4 +1,4 @@
-html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +60,7 @@ html
             --gray-color: #6c757d;
             --border-radius: 8px;
             --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            --gold-color: #D4AF37;
         }
         
         * {
@@ -361,8 +362,8 @@ html
         }
         
         footer {
-            background: #2c3e50;
-            color: white;
+            background: var(--gold-color);
+            color: #333;
             padding: 2rem 0;
             margin-top: 3rem;
         }
@@ -378,11 +379,11 @@ html
             margin-bottom: 1.2rem;
             position: relative;
             padding-bottom: 8px;
-            color: #2c7be5;
+            color: #333;
         }
         
         .footer-section p {
-            color: #ccc;
+            color: #555;
             margin-bottom: 10px;
         }
         
@@ -396,7 +397,7 @@ html
         }
         
         .footer-links a {
-            color: #ccc;
+            color: #333;
             text-decoration: none;
             transition: color 0.3s;
             display: block;
@@ -404,15 +405,16 @@ html
         }
         
         .footer-links a:hover {
-            color: white;
+            color: #000;
+            text-decoration: underline;
         }
         
         .copyright {
             text-align: center;
             padding-top: 2rem;
-            color: #aaa;
+            color: #555;
             font-size: 0.9rem;
-            border-top: 1px solid #444;
+            border-top: 1px solid #a0a0a0;
             margin-top: 2rem;
         }
         
@@ -613,27 +615,27 @@ html
             <div class="documentation-grid">
                 <div class="doc-card">
                     <h3>Whitepaper</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Whitepaper.html" target="_blank">Read the whitepaper</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Technical%20Documents/Whitepaper.html" target="_blank">Read the whitepaper</a>
                 </div>
                 <div class="doc-card">
                     <h3>Technical Specification</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Technical%20Specification.html" target="_blank">View technical details</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Technical%20Documents/Technical%20Specification.html" target="_blank">View technical details</a>
                 </div>
                 <div class="doc-card">
                     <h3>Tokenomics</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Tokenomics.html" target="_blank">View token economics</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Technical%20Documents/Tokenomics.html" target="_blank">View token economics</a>
                 </div>
                 <div class="doc-card">
                     <h3>Security Review</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Security-review.html" target="_blank">View security audit</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Technical%20Documents/Security-review.html" target="_blank">View security audit</a>
                 </div>
                 <div class="doc-card">
                     <h3>Roadmap</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/RoadMap.html" target="_blank">View development roadmap</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Project%20Documentation/RoadMap.html" target="_blank">View development roadmap</a>
                 </div>
                 <div class="doc-card">
                     <h3>Read Me</h3>
-                    <a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/ReadMe.html" target="_blank">View project information</a>
+                    <a href="https://maxrighttalent.github.io/usdtz-token/Project%20Documentation/ReadMe.html" target="_blank">View project information</a>
                 </div>
             </div>
         </div>
@@ -698,8 +700,8 @@ html
                     <ul class="footer-links">
                         <li><a href="https://bscscan.com/token/0x12c860695289e06b390e008ed0871172a24f5008" target="_blank">BscScan Contract</a></li>
                         <li><a href="https://github.com/maxrighttalent/usdtz-token" target="_blank">GitHub Repository</a></li>
-                        <li><a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Technical%20Documents/Whitepaper.html" target="_blank">Whitepaper</a></li>
-                        <li><a href="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/Project%20Documentation/RoadMap.html" target="_blank">Roadmap</a></li>
+                        <li><a href="https://maxrighttalent.github.io/usdtz-token/Technical%20Documents/Whitepaper.html" target="_blank">Whitepaper</a></li>
+                        <li><a href="https://maxrighttalent.github.io/usdtz-token/Project%20Documentation/RoadMap.html" target="_blank">Roadmap</a></li>
                     </ul>
                 </div>
             </div>
@@ -726,40 +728,3 @@ html
                 }
             });
         });
-
-        // Add active class to navigation
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('nav a');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Open documentation links in new tab
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.doc-card a').forEach(link => {
-                link.target = '_blank';
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.open(this.href, '_blank');
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-```
