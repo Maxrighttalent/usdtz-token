@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -493,7 +492,8 @@
     <header>
         <div class="container header-content">
             <div class="logo">
-                <img src="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/LogoSVG%2032x32.svg" alt="USDT.z Logo">
+                <!-- FIXED: Using raw.githubusercontent.com instead of github.com -->
+                <img src="https://raw.githubusercontent.com/Maxrighttalent/usdtz-token/main/LogoSVG%2032x32.svg" alt="USDT.z Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/64/2c7be5/ffffff?text=USDT.z';">
                 <div class="logo-text">
                     <h1>USDT.z Token</h1>
                     <p>Tether USD Bridged ZED20</p>
@@ -728,3 +728,6 @@
                 }
             });
         });
+    </script>
+</body>
+</html>
